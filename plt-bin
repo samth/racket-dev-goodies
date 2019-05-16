@@ -21,10 +21,12 @@ if [[ "$EXE" = "plt-bin" && "$1" != "" ]]; then EXE="$1"; shift; fi
 if [[ "${#EXE}" -le 5 ]]; then
  case "$EXE" in
    ( r  ) EXE="racket" ;;
+   ( mz ) EXE="mzscheme" ;;
    ( dr ) EXE="drracket" ;;
    ( gr ) EXE="gracket" ;;
  esac
 fi
+
 
 BIN="$PLTHOME/racket/bin/$EXE"
 

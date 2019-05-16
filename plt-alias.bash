@@ -29,3 +29,6 @@ BASEDIR=""
    fi
 
 }
+
+alias gdbracket='gdb  -eval-command "handle SIGSEGV nostop noprint" --args $PLTHOME/racket/src/build/racket/racket3m'
+alias rrracket='rr record $PLTHOME/racket/src/build/racket/racket3m'
